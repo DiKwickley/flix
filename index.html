@@ -15,12 +15,67 @@
 	*{
 		/*border: 1px dashed green;*/
 	}
+	#home_link {
+	text-decoration: none;
+	text-decoration-style: none;
+	}
+
+	#title_:hover {
+		cursor: pointer;
+		font-weight: 400;
+	}
+
+	#title_ span {
+		transition: 0.1s linear;
+	}
+
+	#title_:hover span:nth-child(1) {
+		margin-right: 0px;
+	}
+
+	#title_:hover span:nth-child(1):after {
+		content: "-";
+	}
+
+	#title_:hover span:nth-child(2) {
+		margin-left: 0px;
+	}
+
+	#title_:hover span{
+		color: #dc3545;
+		text-shadow: 0 0 10px #dc3545,
+		0 0 20px #dc3545,
+		0 0 30px #dc3545,
+		0 0 40px #dc3545,
+		0 0 60px #dc3545;
+	}
+
+	/* width */
+	::-webkit-scrollbar {
+	  width: 12px;
+	}
+
+	/* Track */
+	::-webkit-scrollbar-track {
+	  background: #f1f1f1;
+	}
+
+	/* Handle */
+	::-webkit-scrollbar-thumb {
+	  background: #888;
+	}
+
+	/* Handle on hover */
+	::-webkit-scrollbar-thumb:hover {
+	  background: #555;
+	}
 </style>
 <body class="bg-dark p-0">
 
-	<div class="display-1 text-center text-white">
-		Wiki<span class="text-danger">Flix</span>
-	</div>
+	<a href="#" id = 'home_link'>
+		<div class="display-1 text-center text-white" id="title_">
+			<span>Wiki</span><span class="text-danger">Flix</span>
+		</div></a>
 
 	
 	<div class="container-fluid row my-4 p-0 m-0">
